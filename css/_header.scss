@@ -1,0 +1,141 @@
+header {
+    height: 56px;
+    background-color: $brand-color;
+    line-height: 56px;
+
+    @media (min-width:768px) {
+        background-color: #ac1419;
+    }
+
+
+    .container_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 20px 0px 20px;
+
+
+
+
+        .loup_search {
+            border: none;
+            background-color: transparent;
+            margin-right: 30px;
+
+            @media (min-width:768px) {
+                display: none;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+        }
+
+        .hamburger {
+            border: none;
+            background-color: transparent;
+
+            @media (min-width:768px) {
+                display: none;
+            }
+
+            img {
+                width: 20px;
+                height: 14px;
+            }
+        }
+
+        .header_buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .header_bntt_tablet {
+            display: none;
+
+            @media (min-width:768px) {
+                display: flex;
+                align-items: center;
+
+                .btn_settings,
+                .btn_email,
+                .btn_user,
+                .log-out {
+                    border: none;
+                    background-color: transparent;
+                    margin-left: 20px;
+                    object-fit: contain;
+                    padding: 0;
+                }
+
+                .user_name {
+                    display: none;
+
+                    @media (min-width:1352px) {
+                        display: block;
+                        margin-left: 19px;
+                        margin-right: 75px;
+
+                        color: $white;
+                        font-size: 12px;
+                        font-weight: bold;
+                        letter-spacing: 0.14px;
+                        text-align: right;
+                    }
+                }
+
+                .log-out {
+                    color: $white;
+                    font-size: 12px;
+                    font-weight: bold;
+                    letter-spacing: 0.14px;
+                    text-align: right;
+                    margin-left: 41px;
+                    text-transform: uppercase;
+
+                    @media (min-width:1352px) {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+        }
+
+        .logo {
+            @media (min-width:768px) {
+                display: none;
+            }
+
+            @media (min-width:1352px) {
+                display: block;
+            }
+        }
+
+        .logo_small {
+            display: none;
+
+            @media (min-width:768px) {
+                display: block;
+            }
+
+            @media (min-width:1352px) {
+                display: none;
+            }
+        }
+
+        @media (min-width:1352px) {
+            max-width: 1220px;
+            margin: 0 auto;
+        }
+
+
+    }
+
+
+
+
+
+
+}
