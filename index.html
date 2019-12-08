@@ -235,6 +235,76 @@
       </aside>
     </main>
 
+<section class="modal-wrap modal-none">
+    <div class="top">
+      <div class="title-name container">
+        <h1>Przelew krajowy</h1>
+        <img src="./image/clozeX.svg" class="closeX" alt="close" />
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="middle">
+      <form class="transferForm container">
+
+        <div class="select_account container_input">
+          <label class="choose_account control"> Z rachunku </label>
+          <select id="choose_account" class="input_class">
+            <option value="my-first-acc"> Moje Konto Przekorzystne 12 734,56 PLN </option>
+            <option value="my-secacc"> Moje Konto Przekorzystne2 </option>
+            <option value="my-third-acc"> Moje Konto Przekorzystne3 </option>
+          </select>
+          
+        </div>
+
+        <div class=" container_input">
+          <label class="acc-number control">Na rachunek  </label>
+          <input type="text" class="input_class" placeholder="Wpisz rachunek odbiorcy" id="acc_number">
+          <span class="info_about_error">Wpisz kwote -do poprawy</span>
+          
+        </div>
+        <div class=" container_input">
+          <label class="amount control">Kwota</label>
+          <input type="text" class="input_class amount_input" placeholder="PLN" id="amount">
+        </div>
+
+        <div class=" container_input">
+          <label class="adress-recipient control">Adres odbiorcy (Opcjonalnie)</label>
+          <input type="text" class="input_class" placeholder="Wpisz adres odbiorcy" id="adress_recipient">
+        </div>
+
+        <div class=" container_input">
+          <label class="title-transfer control">Tytułem </label>
+          <input type="text" class="input_class" placeholder="Placeholder" id="title_transfer">
+          
+        </div>
+
+        <div class=" container_input">
+          <label class="save-as-standing control">
+            <input type="checkbox"  name="standing_order" value="" id="save_as_standing">
+            Zapisz jako zlecenie stałe
+           <!-- <span class="checkmark"></span> -->
+            <span class="control__indicator"></span>
+          </label>
+        </div>
+
+        <div class=" container_input">
+          <label class="name-order control">Nazwa zlecenia </label>
+          <input type="text" class="input_class" placeholder="Placeholder" id="name_order" checked="checked">
+         
+        </div>
+
+      </form>
+      </div>
+    </div>
+    <div class="footer_in_window_pay">
+      <div class="click_next">
+        <img src="./image/arrow_right_white.svg" alt="right_arrow" class="right_arrow">
+        <button class="btn_next">Dalej</button>
+      </div>
+
+  </section>
+
     <!-- footer -->
     <footer>
       <div class="container_footer">
@@ -259,5 +329,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/newApp.js"></script>
   </body>
 </html>
