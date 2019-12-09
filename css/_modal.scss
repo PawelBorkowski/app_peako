@@ -52,7 +52,7 @@
 
     .main {
         background-color: $white;
-        padding-bottom: 200px;
+        //padding-bottom: 200px;
 
 
 
@@ -151,7 +151,6 @@
                         border: solid white;
                         border-width: 0 1px 1px 0;
                         transform: rotate(45deg);
-
                     }
                 }
 
@@ -160,6 +159,35 @@
                     &::placeholder {
                         text-align: right;
                     }
+                }
+
+            }
+
+            @media(min-width:768px) {
+                .changing_order {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+
+                .amount_to_transfer {
+                    order: 2;
+                    flex: 1 1 auto;
+                    align-self: auto;
+                }
+
+                .adress_of_recipient {
+                    order: 1;
+                    flex: 0 1 100%;
+                    align-self: auto;
+                }
+
+                .transfer_title {
+                    order: 3;
+                    flex: 2 1 auto;
+                    align-self: auto;
+                    margin-left: 20px;
                 }
 
             }
@@ -179,10 +207,17 @@
         }
     }
 
+
+
     .footer_in_window_pay {
         height: 73px;
         box-shadow: 0 0 10px 0.2px rgba(0, 0, 0, 0.2);
         background-color: $white-two;
+        margin-top: 200px;
+
+        @media(min-width: 768px) {
+            height: 102px;
+        }
 
 
         .click_next {
@@ -198,9 +233,21 @@
             border-radius: 50%;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 
+            @media(min-width: 768px) {
+                width: 230px;
+                height: 50px;
+                border-radius: 4px;
+                top: 26px;
+                margin-right: 20px;
+            }
+
             .right_arrow {
                 margin-top: 27px;
                 margin-bottom: 5px;
+
+                @media(min-width:768px) {
+                    display: none;
+                }
             }
 
             .btn_next {
@@ -208,6 +255,11 @@
                 border: none;
                 background-color: transparent;
                 text-transform: uppercase;
+
+                @media(min-width:768px) {
+                    line-height: 50px;
+                }
+
             }
 
         }

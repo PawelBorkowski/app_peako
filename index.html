@@ -1,241 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pekao Bank</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,600,700,900&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="container_header">
-        <a href="#" class="logo"
-          ><img src="./image/logo_big.svg" alt="logoo"/></a
-        ><a href="#" class="logo_small"
-          ><img src="./image/logo_small.svg" alt="logoo"
-        /></a>
-        <div class="header_buttons">
-          <button class="loup_search">
-            <img src="./image/loup.svg" alt="loup" /></button
-          ><button class="hamburger">
-            <img src="./image/menu.svg" alt="menu" />
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pekao Bank</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700,900&display=swap&subset=latin-ext"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container_header">
+      <a href="#" class="logo"><img src="./image/logo_big.svg" alt="logoo" /></a><a href="#" class="logo_small"><img
+          src="./image/logo_small.svg" alt="logoo" /></a>
+      <div class="header_buttons">
+        <button class="loup_search">
+          <img src="./image/loup.svg" alt="loup" /></button><button class="hamburger">
+          <img src="./image/menu.svg" alt="menu" />
+        </button>
+      </div>
+      <div class="header_bntt_tablet">
+        <button class="btn_settings">
+          <img src="./image/settings.svg" alt="settings" /></button><button class="btn_email">
+          <img src="./image/mail.svg" alt="mail" /></button><button class="btn_user">
+          <img src="./image/user.svg" alt="mail" />
+        </button>
+        <p class="user_name">Katarzyna Kowalewska</p>
+        <button class="log-out">Wyloguj</button>
+      </div>
+    </div>
+  </header>
+  <nav class="nav_bottom">
+    <div class="nav-btn-bottom container_nav">
+      <ul class="items">
+        <li class="item  ">
+          <a href="#" class="active">produkty</a>
+        </li>
+        <li class="item "><a href="#">platność</a></li>
+      </ul>
+
+      <div class="input_search">
+        <input type="text" placeholder="Wyszukaj" /><img src="./image/icon-search-red.svg" alt="search" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- work on main -->
+  <main class="container_main">
+    <div class="all_sections">
+      <div class="informations">
+        <div class="inforamtion_account">
+          <p class="title">Rachunek podstawowy</p>
+          <h1 class="description">
+            Moje konto przekorzystne<span class="account-arrow"><img src="./image/icon-right-arrow.svg"
+                alt="arrow" /></span>
+          </h1>
+          <p class="number_bank">12 3456 7890 1234 5678 9012 3456</p>
         </div>
-        <div class="header_bntt_tablet">
-          <button class="btn_settings">
-            <img src="./image/settings.svg" alt="settings" /></button
-          ><button class="btn_email">
-            <img src="./image/mail.svg" alt="mail" /></button
-          ><button class="btn_user">
-            <img src="./image/user.svg" alt="mail" />
-          </button>
-          <p class="user_name">Katarzyna Kowalewska</p>
-          <button class="log-out">Wyloguj</button>
+        <div class="information_account2">
+          <p class="available_amount">dostęne środki</p>
+          <p class="amount">12 345,67 PLN</p>
         </div>
       </div>
-    </header>
-    <nav class="nav_bottom">
-      <div class="nav-btn-bottom container_nav">
-        <ul class="items">
-          <li class="item  ">
-            <a href="#" class="active">produkty</a>
-          </li>
-          <li class="item "><a href="#">platność</a></li>
-        </ul>
 
-        <div class="input_search">
-          <input type="text" placeholder="Wyszukaj" /><img
-            src="./image/icon-search-red.svg"
-            alt="search"
-          />
+      <section>
+        <div class="twoButtons">
+          <a href="#" class="newPay">nowa płatność</a>
+          <a href="#" class="history">historia</a>
         </div>
-      </div>
-    </nav>
+      </section>
 
-    <!-- work on main -->
-    <main class="container_main">
-      <div class="all_sections">
-        <div class="informations">
-          <div class="inforamtion_account">
-            <p class="title">Rachunek podstawowy</p>
-            <h1 class="description">
-              Moje konto przekorzystne<span class="account-arrow"
-                ><img src="./image/icon-right-arrow.svg" alt="arrow"
-              /></span>
-            </h1>
-            <p class="number_bank">12 3456 7890 1234 5678 9012 3456</p>
-          </div>
-          <div class="information_account2">
-            <p class="available_amount">dostęne środki</p>
-            <p class="amount">12 345,67 PLN</p>
-          </div>
-        </div>
-
-        <section>
-          <div class="twoButtons">
-            <a href="#" class="newPay">nowa płatność</a>
-            <a href="#" class="history">historia</a>
-          </div>
-        </section>
-
-        <section>
-          <div class="table_of_payment">
-            <div class="rows_of_history">
-              <div class="titles_of_column_tablet">
-                <p>data</p>
-                <p>type</p>
-                <p>odbiorca/nadawca/tytuł</p>
-                <p>kategoria</p>
-                <p>Kwota</p>
-              </div>
-              <!-- first row -->
-              <div class="name_items_in_column">
-                <div class="kind_data">
-                  <span>
-                    <img
-                      src="./image/incoming.svg"
-                      class="incoming_cash"
-                      alt="incoming_cash"
-                  /></span>
-                  <p class="data">21.05</p>
-                </div>
-                <div class="image_of_typ_pay">
-                  <img
-                    src="./image/incoming.svg"
-                    class="incoming_cash"
-                    alt="incoming_cash"
-                  />
-                </div>
-                <div class="name_title">
-                  <p>Antonina Wójcik</p>
-                  <p>Zwrot</p>
-                </div>
-                <div class="category_of_transaction">
-                  <p>wpływy wewn.</p>
-                </div>
-                <div class="amount_PLN">
-                  <p>125,68 pln</p>
-                </div>
-              </div>
-              <!-- end first row -->
-              <!-- first row -->
-              <div class="name_items_in_column">
-                <div class="kind_data">
-                  <span>
-                    <img
-                      src="./image/incoming.svg"
-                      class="incoming_cash"
-                      alt="incoming_cash"
-                  /></span>
-                  <p class="data">21.05</p>
-                </div>
-                <div class="image_of_typ_pay">
-                  <img
-                    src="./image/incoming.svg"
-                    class="incoming_cash"
-                    alt="incoming_cash"
-                  />
-                </div>
-                <div class="name_title">
-                  <p>Uber</p>
-                  <p>Zwrot</p>
-                </div>
-                <div class="category_of_transaction">
-                  <p>wpływy wewn.</p>
-                </div>
-                <div class="amount_PLN">
-                  <p>25,21 pln</p>
-                </div>
-              </div>
-              <!-- end first row -->
-              <!-- first row -->
-              <div class="name_items_in_column">
-                <div class="kind_data">
-                  <span>
-                    <img
-                      src="./image/incoming.svg"
-                      class="incoming_cash"
-                      alt="incoming_cash"
-                  /></span>
-                  <p class="data">21.05</p>
-                </div>
-                <div class="image_of_typ_pay">
-                  <img
-                    src="./image/incoming.svg"
-                    class="incoming_cash"
-                    alt="incoming_cash"
-                  />
-                </div>
-                <div class="name_title">
-                  <p>Antonina Wójcik</p>
-                  <p>Zwrot</p>
-                </div>
-                <div class="category_of_transaction">
-                  <p>wpływy wewn.</p>
-                </div>
-                <div class="amount_PLN">
-                  <p>120005,68 pln</p>
-                </div>
-              </div>
-              <!-- end first row -->
-              <!-- first row -->
-              <div class="name_items_in_column">
-                <div class="kind_data">
-                  <span>
-                    <img
-                      src="./image/incoming.svg"
-                      class="incoming_cash"
-                      alt="incoming_cash"
-                  /></span>
-                  <p class="data">21.05</p>
-                </div>
-                <div class="image_of_typ_pay">
-                  <img
-                    src="./image/incoming.svg"
-                    class="incoming_cash"
-                    alt="incoming_cash"
-                  />
-                </div>
-                <div class="name_title">
-                  <p>Antonina Wójcik</p>
-                  <p>Zwrot</p>
-                </div>
-                <div class="category_of_transaction">
-                  <p>wpływy wewn.</p>
-                </div>
-                <div class="amount_PLN">
-                  <p>125,68 pln</p>
-                </div>
-              </div>
-              <!-- end first row -->
+      <section>
+        <div class="table_of_payment">
+          <div class="rows_of_history">
+            <div class="titles_of_column_tablet">
+              <p>data</p>
+              <p>type</p>
+              <p>odbiorca/nadawca/tytuł</p>
+              <p>kategoria</p>
+              <p>Kwota</p>
             </div>
+            <!-- first row -->
+            <div class="name_items_in_column">
+              <div class="kind_data">
+                <span>
+                  <img src="./image/incoming.svg" class="incoming_cash" alt="incoming_cash" /></span>
+                <p class="data">21.05</p>
+              </div>
+              <div class="image_of_typ_pay">
+                <img src="./image/incoming.svg" class="incoming_cash" alt="incoming_cash" />
+              </div>
+              <div class="name_title">
+                <p>Antonina Wójcik</p>
+                <p>Zwrot</p>
+              </div>
+              <div class="category_of_transaction">
+                <p>wpływy wewn.</p>
+              </div>
+              <div class="amount_PLN">
+                <p>125,68 pln</p>
+              </div>
+            </div>
+            <!-- end first row -->
+            <!-- first row -->
+            <div class="name_items_in_column">
+              <div class="kind_data">
+                <span>
+                  <img src="./image/incoming.svg" class="incoming_cash" alt="incoming_cash" /></span>
+                <p class="data">21.05</p>
+              </div>
+              <div class="image_of_typ_pay">
+                <img src="./image/incoming.svg" class="incoming_cash" alt="incoming_cash" />
+              </div>
+              <div class="name_title">
+                <p>Uber</p>
+                <p>Zwrot</p>
+              </div>
+              <div class="category_of_transaction">
+                <p>wpływy wewn.</p>
+              </div>
+              <div class="amount_PLN">
+                <p>25,21 pln</p>
+              </div>
+            </div>
+            <!-- end first row -->
+            <!-- first row -->
+            <div class="name_items_in_column">
+              <div class="kind_data">
+                <span>
+                  <img src="./image/incoming.svg" class="incoming_cash" alt="incoming_cash" /></span>
+                <p class="data">21.05</p>
+              </div>
+              <div class="image_of_typ_pay">
+                <img src="./image/incoming.svg" class="incoming_cash" alt="incoming_cash" />
+              </div>
+              <div class="name_title">
+                <p>Antonina Wójcik</p>
+                <p>Zwrot</p>
+              </div>
+              <div class="category_of_transaction">
+                <p>wpływy wewn.</p>
+              </div>
+              <div class="amount_PLN">
+                <p>120005,68 pln</p>
+              </div>
+            </div>
+            <!-- end first row -->
+            <!-- first row -->
+            <div class="name_items_in_column">
+              <div class="kind_data">
+                <span>
+                  <img src="./image/incoming.svg" class="incoming_cash" alt="incoming_cash" /></span>
+                <p class="data">21.05</p>
+              </div>
+              <div class="image_of_typ_pay">
+                <img src="./image/incoming.svg" class="incoming_cash" alt="incoming_cash" />
+              </div>
+              <div class="name_title">
+                <p>Antonina Wójcik</p>
+                <p>Zwrot</p>
+              </div>
+              <div class="category_of_transaction">
+                <p>wpływy wewn.</p>
+              </div>
+              <div class="amount_PLN">
+                <p>125,68 pln</p>
+              </div>
+            </div>
+            <!-- end first row -->
           </div>
-          <a href="#" class="see-more">Pokaż więcej</a>
-        </section>
+        </div>
+        <a href="#" class="see-more">Pokaż więcej</a>
+      </section>
+    </div>
+    <aside>
+      <div class="offer-for-you">
+        <h2 class="offer-title">Masz wolne środki</h2>
+        <p class="offer-description">
+          Na swoim koncie masz dużo wolnych środków. Warto przenieść je na
+          lokatę i uchronić przed inflacją
+        </p>
+        <a href="#" class="call-to-action">call to action</a>
       </div>
-      <aside>
-        <div class="offer-for-you">
-          <h2 class="offer-title">Masz wolne środki</h2>
-          <p class="offer-description">
-            Na swoim koncie masz dużo wolnych środków. Warto przenieść je na
-            lokatę i uchronić przed inflacją
-          </p>
-          <a href="#" class="call-to-action">call to action</a>
-        </div>
-        <div class="spending-analysis">
-          <p class="title-analysis-spending">Analiza wydatków</p>
-        </div>
-      </aside>
-    </main>
+      <div class="spending-analysis">
+        <p class="title-analysis-spending">Analiza wydatków</p>
+      </div>
+    </aside>
+  </main>
 
-<section class="modal-wrap modal-none">
+  <section class="modal-wrap modal-none">
     <div class="top">
       <div class="title-name container">
         <h1>Przelew krajowy</h1>
@@ -244,92 +201,105 @@
     </div>
 
     <div class="main">
-      <div class="middle">
-      <form class="transferForm container">
 
-        <div class="select_account container_input">
-          <label class="choose_account control"> Z rachunku </label>
-          <select id="choose_account" class="input_class">
-            <option value="my-first-acc"> Moje Konto Przekorzystne 12 734,56 PLN </option>
-            <option value="my-secacc"> Moje Konto Przekorzystne2 </option>
-            <option value="my-third-acc"> Moje Konto Przekorzystne3 </option>
-          </select>
-          
-        </div>
+      <form class="transferForm ">
+        <div class="container">
+          <div class="select_account container_input">
+            <label class="choose_account control"> Z rachunku </label>
+            <select id="choose_account" class="input_class">
+              <option value="my-first-acc"> Moje Konto Przekorzystne 12 734,56 PLN </option>
+              <option value="my-secacc"> Moje Konto Przekorzystne2 </option>
+              <option value="my-third-acc"> Moje Konto Przekorzystne3 </option>
+            </select>
 
-        <div class=" container_input">
-          <label class="acc-number control">Na rachunek  </label>
-          <input type="text" class="input_class" placeholder="Wpisz rachunek odbiorcy" id="acc_number">
-          <span class="info_about_error">Wpisz kwote -do poprawy</span>
-          
-        </div>
-        <div class=" container_input">
-          <label class="amount control">Kwota</label>
-          <input type="text" class="input_class amount_input" placeholder="PLN" id="amount">
-        </div>
+          </div>
 
-        <div class=" container_input">
-          <label class="adress-recipient control">Adres odbiorcy (Opcjonalnie)</label>
-          <input type="text" class="input_class" placeholder="Wpisz adres odbiorcy" id="adress_recipient">
-        </div>
+          <div class=" container_input">
+            <label class="acc-number control">Na rachunek </label>
+            <input type="text" class="input_class" placeholder="Wpisz rachunek odbiorcy" id="acc_number">
+            <span class="info_about_error">Wpisz kwote -do poprawy</span>
 
-        <div class=" container_input">
-          <label class="title-transfer control">Tytułem </label>
-          <input type="text" class="input_class" placeholder="Placeholder" id="title_transfer">
-          
-        </div>
+          </div>
 
-        <div class=" container_input">
-          <label class="save-as-standing control">
-            <input type="checkbox"  name="standing_order" value="" id="save_as_standing">
-            Zapisz jako zlecenie stałe
-           <!-- <span class="checkmark"></span> -->
-            <span class="control__indicator"></span>
-          </label>
-        </div>
+          <div class="changing_order">
+            <div class=" container_input amount_to_transfer">
+              <label class="amount control">Kwota przelewu</label>
+              <input type="text" class="input_class amount_input" placeholder="PLN" id="amount">
+            </div>
 
-        <div class=" container_input">
-          <label class="name-order control">Nazwa zlecenia </label>
-          <input type="text" class="input_class" placeholder="Placeholder" id="name_order" checked="checked">
-         
-        </div>
+            <div class="container_input adress_of_recipient">
+              <label class="adress-recipient control">Adres odbiorcy (Opcjonalnie)</label>
+              <input type="text" class="input_class" placeholder="Wpisz adres odbiorcy" id="adress_recipient">
+            </div>
 
+            <div class="container_input transfer_title">
+              <label class="title-transfer control">Tytułem </label>
+              <input type="text" class="input_class" placeholder="Placeholder" id="title_transfer">
+
+            </div>
+          </div>
+
+          <div class=" container_input">
+            <label class="save-as-standing control">
+              <input type="checkbox" name="standing_order" value="" id="save_as_standing">
+              Zapisz jako zlecenie stałe
+              <!-- <span class="checkmark"></span> -->
+              <span class="control__indicator"></span>
+            </label>
+          </div>
+
+          <div class=" container_input">
+            <label class="name-order control">Nazwa zlecenia </label>
+            <input type="text" class="input_class" placeholder="Placeholder" id="name_order" checked="checked">
+
+          </div>
+        </div>
+        <div class="footer_in_window_pay">
+          <div class="click_next">
+            <img src="./image/arrow_right_white.svg" alt="right_arrow" class="right_arrow">
+            <button class="btn_next">Dalej</button>
+
+          </div>
+        </div>
       </form>
-      </div>
+
     </div>
-    <div class="footer_in_window_pay">
+    <!-- <div class="footer_in_window_pay">
       <div class="click_next">
         <img src="./image/arrow_right_white.svg" alt="right_arrow" class="right_arrow">
         <button class="btn_next">Dalej</button>
+       
       </div>
+    </div> -->
 
   </section>
 
-    <!-- footer -->
-    <footer>
-      <div class="container_footer">
-        <div class="list_links">
-          <ul class="links">
-            <li class="item"><a href="#">DM Pekao</a></li>
-            <li class="item"><a href="#">CDM Pekao S.A.</a></li>
-            <li class="item"><a href="#">Pioneer Pekao TFI S.A.</a></li>
-            <li class="item"><a href="#">Pekao Pioneer PTE S.A.</a></li>
-            <li class="item"><a href="#">Pekao Leasing Sp. z o.o.</a></li>
-          </ul>
-          <p class="copyright">Copyright © 2002 - 2019 Bank Pekao S.A.</p>
-        </div>
-
-        <p class="bank_credibility">
-          Bank Polska Kasa Opieki Spółka Akcyjna z siedzibą w Warszawie, ul.
-          Grzybowska 53/57, 00-950 Warszawa, wpisany do rejestru przedsiębiorców
-          w Sądzie Rejonowym dla m.st. Warszawy w Warszawie, XII Wydział
-          Gospodarczy Krajowego Rejestru Sądowego, KRS: 0000014843, NIP:
-          526-00-06-841, REGON: 000010205, wysokość kapitału zakładowego i
-          kapitału wpłaconego: 262 470 034 zł.
-        </p>
+  <!-- footer -->
+  <footer>
+    <div class="container_footer">
+      <div class="list_links">
+        <ul class="links">
+          <li class="item"><a href="#">DM Pekao</a></li>
+          <li class="item"><a href="#">CDM Pekao S.A.</a></li>
+          <li class="item"><a href="#">Pioneer Pekao TFI S.A.</a></li>
+          <li class="item"><a href="#">Pekao Pioneer PTE S.A.</a></li>
+          <li class="item"><a href="#">Pekao Leasing Sp. z o.o.</a></li>
+        </ul>
+        <p class="copyright">Copyright © 2002 - 2019 Bank Pekao S.A.</p>
       </div>
-    </footer>
 
-    <script src="./js/newApp.js"></script>
-  </body>
+      <p class="bank_credibility">
+        Bank Polska Kasa Opieki Spółka Akcyjna z siedzibą w Warszawie, ul.
+        Grzybowska 53/57, 00-950 Warszawa, wpisany do rejestru przedsiębiorców
+        w Sądzie Rejonowym dla m.st. Warszawy w Warszawie, XII Wydział
+        Gospodarczy Krajowego Rejestru Sądowego, KRS: 0000014843, NIP:
+        526-00-06-841, REGON: 000010205, wysokość kapitału zakładowego i
+        kapitału wpłaconego: 262 470 034 zł.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/newApp.js"></script>
+</body>
+
 </html>
