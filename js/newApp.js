@@ -10,7 +10,7 @@
 // );
 
 
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener("DOMContentLoaded", function () {
     const transformBtn = document.querySelector(".newPay");
     const transferForm = document.querySelector(".modal-wrap");
     transformBtn &&
@@ -20,7 +20,22 @@ document.addEventListener("DOMContentLoaded", async function () {
             return 0;
         }));
 
-
+    let data = new FormData();
+    data.append(name, "dupa")
+    let testVariable = "name=dupa";
+    fetch(`http://localhost:3001/rest/v1/pekao-requests/postForm`, {
+        method: 'POST',
+        mode: 'cors',
+        body: data
+        // body: JSON.stringify({key: value})
+    }).then(response => {
+        console.log(response)
+        if (response.status === 200) {
+            response.json().then(dupa => {
+                console.log(dupa)
+            })
+        }
+    });
 
     const choose_account = document.getElementById('choose_account');
     console.log(choose_account, choose_account.value);
@@ -44,8 +59,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     // console.log(save_as_standing, save_as_standing.value);
     save_as_standing.checked ? (value = true) : (value = false);
     console.log(value);
-
-
 
     const name_order = document.getElementById('name_order');
     // console.log(name_order, name_order.value);
