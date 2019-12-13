@@ -20,6 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
             return 0;
         }));
 
+    const closeForm = document.querySelector('.closeX');
+    closeForm.addEventListener('click', function () {
+        transferForm.classList.add('modal-none')
+    })
+
+
     let data = new FormData();
     data.append(name, "dupa")
     let testVariable = "name=dupa";

@@ -805,10 +805,38 @@ main aside {
   margin-right: 20px;
 }
 
+@media (min-width: 1352px) {
+  .container {
+    margin-left: 266px;
+    margin-right: 266px;
+  }
+}
+
+.modal-wrap {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .modal-wrap {
+    margin-top: 20px;
+  }
+}
+
 .modal-wrap .top {
   height: 60px;
   background-color: #f4f4f4;
   line-height: 60px;
+}
+
+@media (min-width: 768px) {
+  .modal-wrap .top {
+    height: 82px;
+    line-height: 82px;
+  }
 }
 
 .modal-wrap .top .title-name {
@@ -829,6 +857,14 @@ main aside {
 
 .modal-wrap .main {
   background-color: white;
+  position: relative;
+  height: 100%;
+}
+
+.modal-wrap .main .transferForm {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 
 .modal-wrap .main .transferForm .container_input {
@@ -1019,13 +1055,22 @@ main aside {
   -webkit-box-shadow: 0 0 10px 0.2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px 0.2px rgba(0, 0, 0, 0.2);
   background-color: #f4f4f4;
-  margin-top: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @media (min-width: 768px) {
   .modal-wrap .footer_in_window_pay {
     height: 102px;
-    margin-top: 232px;
+  }
+}
+
+@media (min-width: 1352px) {
+  .modal-wrap .footer_in_window_pay {
+    padding-left: 266px;
+    padding-right: 266px;
   }
 }
 
@@ -1232,5 +1277,7 @@ footer .container_footer .bank_credibility {
 body {
   font-family: 'Lato', sans-serif;
   background-color: #f4f4f4;
+  position: relative;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
