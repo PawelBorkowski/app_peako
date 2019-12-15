@@ -22,7 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const closeForm = document.querySelector('.closeX');
     closeForm.addEventListener('click', function () {
-        transferForm.classList.add('modal-none')
+        transferForm.classList.add('modal-none');
+    })
+
+    const btnNext = document.querySelector('.btn_next');
+    const transfeSuccess = document.querySelector('.modal-success');
+
+    btnNext.addEventListener('click', function () {
+        transferForm.classList.add('modal-none');
+        transfeSuccess.classList.remove('modal-none')
+    })
+
+    const closeSucess = document.querySelector('.close_cross');
+    closeSucess.addEventListener('click', function () {
+        transfeSuccess.classList.add('modal-none')
     })
 
 

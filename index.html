@@ -234,7 +234,7 @@
         </div>
       </aside>
     </main>
-
+    <!-- --------------modal popup payment start----------------- -->
     <section class="modal-wrap modal-none">
       <div class="top">
         <div class="title-name container">
@@ -342,18 +342,36 @@
         </form>
       </div>
     </section>
-
-    <section class="modal-success">
+    <!-- --------------modal popup payment end----------------- -->
+    <!-- --------------modal success start----------------- -->
+    <section class="modal-success modal-none">
       <div class="info_accept">
-        <div class="accept_image">
-          <img src="/image/bird.svg" alt="accept" />
-        </div>
-        <div class="accept_description">Twój przelew został zrealizowany</div>
-        <div class="close_window">
-          <img src="./image/Xwhite.svg" alt="close" />
+        <img src="./image/bird.svg" alt="accept" class="accept_check" />
+        <h2 class="modal-name">Twój przelew został zrealizowany</h2>
+        <div class="close">
+          <img src="./image/Xwhite.svg" alt="close" class="close_cross" />
         </div>
       </div>
+      <div class="modal-elements">
+        <div class="modal-elem">
+          <p class="title">Nadawca</p>
+          <h3 class="name">Moje konto przekorzystne</h3>
+          <p class="number">12 1234 1234 1234 1234 1234 1234</p>
+        </div>
+        <div class="modal-elem">
+          <p class="title">Odbiorca</p>
+          <h3 class="name">Marek Kowalewski</h3>
+          <p class="number">12 1234 1234 1234 1234 1234 1234</p>
+        </div>
+        <div class="modal-elem">
+          <p class="title">Kwota</p>
+          <h3 class="name">23 100,23 PLN</h3>
+          <p class="number">Saldo po operacji: 123 123,12 PLN</p>
+        </div>
+      </div>
+      <button class="modal-btn" id="approval-pdf">potwierdzenie pdf</button>
     </section>
+    <!-- --------------modal success end----------------- -->
 
     <!-- footer -->
     <footer>
