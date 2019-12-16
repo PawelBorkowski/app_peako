@@ -302,8 +302,8 @@ main .all_sections .informations .title {
   font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 31px;
-  margin-bottom: 2px;
+  margin-top: 32px;
+  margin-bottom: 3px;
   color: #2f3234;
 }
 
@@ -322,7 +322,7 @@ main .all_sections .informations .description .account-arrow {
 main .all_sections .informations .number_bank {
   font-size: 10px;
   letter-spacing: 1px;
-  margin-top: 2px;
+  margin-top: 3px;
   color: #858585;
 }
 
@@ -331,9 +331,9 @@ main .all_sections .informations .available_amount {
   letter-spacing: 1px;
   color: #2f3234;
   text-align: left;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   text-transform: uppercase;
-  margin-top: 17px;
+  margin-top: 18px;
   color: #2f3234;
 }
 
@@ -341,7 +341,7 @@ main .all_sections .informations .amount {
   font-size: 18px;
   font-weight: 900;
   color: #2f3234;
-  margin-bottom: 16.5px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -383,7 +383,7 @@ main .all_sections .twoButtons {
           flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 23.5px;
+  margin-top: 25px;
   position: relative;
 }
 
@@ -420,13 +420,13 @@ main .all_sections .twoButtons .history {
 }
 
 main .all_sections .twoButtons .newPay {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 main .all_sections .twoButtons .history {
   background-color: #f4f4f4;
   color: #d71920;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
@@ -538,7 +538,7 @@ main .all_sections .rows_of_history .name_items_in_column::after {
 }
 
 main .all_sections .rows_of_history .name_items_in_column:not(:first-child) {
-  margin-top: 10px;
+  margin-top: 18px;
 }
 
 main .all_sections .rows_of_history .name_items_in_column .kind_data {
@@ -1128,8 +1128,12 @@ main aside {
 }
 
 .modal-success {
+  position: absolute;
   background-color: #3ca933;
   height: 330px;
+  width: 100%;
+  top: 56px;
+  z-index: 1010;
 }
 
 .modal-success .info_accept {

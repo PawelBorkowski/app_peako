@@ -1,6 +1,10 @@
 .modal-success {
+    position: absolute;
     background-color: #3ca933;
     height: 330px;
+    width: 100%;
+    top: 56px;
+    z-index: 1010;
 
     .info_accept {
         display: flex;

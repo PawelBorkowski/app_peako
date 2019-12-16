@@ -32,8 +32,8 @@ main {
                 font-size: 10px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                margin-top: 31px;
-                margin-bottom: 2px;
+                margin-top: 32px;
+                margin-bottom: 3px;
                 color: $second-brand-color;
             }
 
@@ -53,7 +53,7 @@ main {
             .number_bank {
                 font-size: 10px;
                 letter-spacing: 1px;
-                margin-top: 2px;
+                margin-top: 3px;
                 color: #858585;
             }
 
@@ -62,9 +62,9 @@ main {
                 letter-spacing: 1px;
                 color: #2f3234;
                 text-align: left;
-                margin-bottom: 2px;
+                margin-bottom: 3px;
                 text-transform: uppercase;
-                margin-top: 17px;
+                margin-top: 18px;
                 color: $second-brand-color;
             }
 
@@ -72,7 +72,7 @@ main {
                 font-size: 18px;
                 font-weight: 900;
                 color: $second-brand-color;
-                margin-bottom: 16.5px;
+                margin-bottom: 20px;
             }
 
             @media (min-width:768px) {
@@ -110,7 +110,7 @@ main {
                 right: 20px;
             }
 
-            margin-top: 23.5px;
+            margin-top: 25px;
             position: relative;
 
             &::after {
@@ -138,13 +138,13 @@ main {
             }
 
             .newPay {
-                margin-bottom: 24px;
+                margin-bottom: 25px;
             }
 
             .history {
                 background-color: #f4f4f4;
                 color: $brand-color;
-                margin-bottom: 24px;
+                margin-bottom: 25px;
             }
 
             @media (min-width:768px) {
@@ -231,7 +231,7 @@ main {
                 }
 
                 &:not(:first-child) {
-                    margin-top: 10px;
+                    margin-top: 18px;
                 }
 
                 .kind_data {
