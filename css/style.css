@@ -262,6 +262,7 @@ main {
   min-width: 320px;
   background-color: #f4f4f4;
   margin-bottom: 20px;
+  position: relative;
 }
 
 main .all_sections {
@@ -725,6 +726,7 @@ main .all_sections .see-more {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -767,6 +769,23 @@ main aside {
     text-decoration: none;
     font-size: 14px;
     color: white;
+    margin-top: 42px;
+  }
+  main aside .offer-for-you .white-points {
+    display: inline-block;
+    margin-left: 153px;
+  }
+  main aside .offer-for-you .white-points .white-point {
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 11px;
+  }
+  main aside .offer-for-you .white-points .white-point:nth-child(1) {
+    background-color: #4c92e0;
+    border: solid 2px white;
   }
   main aside .spending-analysis {
     height: 385px;
@@ -1130,10 +1149,28 @@ main aside {
 .modal-success {
   position: absolute;
   background-color: #3ca933;
-  height: 330px;
   width: 100%;
   top: 56px;
   z-index: 1010;
+}
+
+@media (min-width: 768px) {
+  .modal-success {
+    top: 112px;
+  }
+}
+
+@media (min-width: 1352px) {
+  .modal-success {
+    position: absolute;
+    max-width: 1220px;
+    margin: 40px auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
 }
 
 .modal-success .info_accept {
@@ -1145,7 +1182,7 @@ main aside {
           align-items: center;
   position: relative;
   color: white;
-  padding-top: 20px;
+  padding-top: 22px;
 }
 
 .modal-success .info_accept .accept_check {
@@ -1167,7 +1204,7 @@ main aside {
   border: solid 1px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   position: absolute;
-  right: 30px;
+  right: 25px;
 }
 
 .modal-success .info_accept .close .close_cross {
@@ -1191,6 +1228,64 @@ main aside {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
+}
+
+@media (min-width: 768px) {
+  .modal-success .modal-elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal-success .modal-elements .modal-elem:nth-child(1) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .modal-success .modal-elements .modal-elem:nth-child(2) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .modal-success .modal-elements .modal-elem:nth-child(3) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 1352px) {
+  .modal-success .modal-elements .modal-elem:nth-child(1) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  .modal-success .modal-elements .modal-elem:nth-child(2) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  .modal-success .modal-elements .modal-elem:nth-child(3) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-top: 25px;
+  }
 }
 
 .modal-success .modal-elements .modal-elem {
@@ -1220,19 +1315,22 @@ main aside {
 }
 
 .modal-success .modal-btn {
-  margin-top: 20px;
+  margin: 20px 0 23px 55px;
   text-transform: uppercase;
-  margin-left: 55px;
   font-size: 12px;
   letter-spacing: 1.1px;
-  padding-right: 21px;
-  padding-left: 23px;
   height: 30px;
   line-height: 12px;
   color: white;
   border-radius: 4px;
   border-color: transparent;
   background-color: rgba(47, 50, 52, 0.3);
+}
+
+@media (min-width: 768px) {
+  .modal-success .modal-btn {
+    margin: 25px 0 26px 55px;
+  }
 }
 
 footer {
