@@ -4,6 +4,7 @@ main {
     background-color: #f4f4f4;
     margin-bottom: 20px;
     //height: calc(100% - 387px);
+    position: relative;
 
     .all_sections {
         background-color: white;
@@ -353,8 +354,6 @@ main {
             }
         }
 
-
-
         @media (min-width:768px) {
             margin: {
                 left: 20px;
@@ -366,7 +365,11 @@ main {
         @media (min-width:1352px) {
             flex-grow: 1;
             align-self: flex-start;
-            margin-top: 0;
+
+            margin: {
+                top: 0;
+                left: 0;
+            }
         }
     }
 
@@ -388,7 +391,6 @@ main {
                     font-size: 22px;
                     font-weight: 900;
                     color: $white;
-
                 }
 
                 .offer-description {
@@ -406,6 +408,26 @@ main {
                     text-decoration: none;
                     font-size: 14px;
                     color: $white;
+                    margin-top: 42px;
+                }
+
+                .white-points {
+                    display: inline-block;
+                    margin-left: 153px;
+
+                    .white-point {
+                        height: 11px;
+                        width: 11px;
+                        background-color: $white;
+                        display: inline-block;
+                        border-radius: 50%;
+                        margin-right: 11px;
+                    }
+
+                    .white-point:nth-child(1) {
+                        background-color: #4c92e0;
+                        border: solid 2px $white;
+                    }
                 }
             }
 
@@ -424,11 +446,7 @@ main {
                 }
             }
         }
-
-
     }
-
-
 
     @media (min-width: 1352px) {
         max-width: 1220px;
